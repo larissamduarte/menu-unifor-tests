@@ -23,7 +23,7 @@ public class LoginPage {
 	}
 	
 	public String obterNomeUsuario() {
-		return dsl.getTexto(By.id("nomeUsuario"));
+		return dsl.getTextoComEspera(By.id("nomeUsuario"), 3);
 	}
 	
 	public String obterMatriculaUsuario() {
